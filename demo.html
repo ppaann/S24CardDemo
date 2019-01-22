@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://myjslib.qiniudn.com/fonts/roboto/roboto.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="demo.css">
+    <title>Demo</title>
+</head>
+<body>
+    <header class="header">
+        <div class="content">
+            <h1>Responsive Waterfall</h1>
+            <p>Resize the browser to see the responsive the effect</p>
+            <div class="btn-group">
+                <button id='add-btn' class="btn btn-primary">Add Box</button>
+                <button id='scaleup-btn' class="btn btn-primary">Scale Up</button>
+                <button id='scaledown-btn' class="btn btn-primary">Scale Down</button>
+            </div>
+            <a href="https://github.com/leozdgao/responsive_waterfall">View on Github</a>
+        </div>
+    </header>
+    <section>
+        <div class="wf-container">
+            <div class="wf-box">
+                <div class="card-header">
+                    <img src="http://placehold.it/30x30/E97452/fff">
+                    <div class="info-container">
+                        <b class="username">Suomi24-kehitystiimi</b>
+                        <div class="publish-time">9.11.2018 13:53</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ilmoita sääntöjen vastainen sisältö, se on helppoa</h3>
+                    <p>
+                        Tarkkasilmäiset ovat ehkä jo huomanneet, että viime viikolla tehtiin uudistuksia ilmiantolomakkeeseen. Ongelmana oli, että lomake oli hankala ja työläs täyttää, ja ilmoituksen tekeminen jäikin monelta kesken. Uusi, entistä selkeämpi ja yksinkertaisempi toteutus on lisännyt loppuun vietyjen ilmoitusten määrää kommenttien osalta keskimäärin 33% ja aloitusviestien osalta yli 100%. Iso parannus ja kiitos siitä kuuluu kaikille ilmoittajille!
+                        <br/>
+                        <br/>
+                        Jotta olisi helpompi hahmottaa, millainen työmaa Suomi24 moderoinnille on, kokosimme teille vähän lukuja. Suomi24 Keskusteluihin tulee noin 360 000 kirjoitusta kuukaudessa, joista keinoäly poistaa keskimäärin 20 000 ja moderoijat 10 000. Ilmoituksia asiattomista sisällöistä tulee lähes 10 000 kuukaudessa, ja niistä 55% johtaa poistoon.
+                        <br/>
+                        <br/>
+                        Suomi24:ssä on jälkimoderointi. Se tarkoittaa, että kirjoitukset tulevat palstoille sellaisenaan kenenkään niitä ennalta tarkistamatta. Keinoäly seuraa tuoreita kirjoituksia kellon ympäri ja poistaa sellaiset, jotka ovat suurella todennäköisyydellä sääntöjen vastaisia. Kirjoitukset, joista keinoäly on epävarma, ohjataan moderointijonoon. Suomi24:ssä on käytössä myös perinteinen sisällön suodatus, jolla saadaan kiinni erikseen määritellyt sanat ja ilmaisut. Ammattimoderoijien työjonoon kirjoitukset päätyvät siis käyttäjien ilmoitusten, seurantaan laitettujen ilmaisujen ja keinoälyn kautta.
+                        <br/>
+                        <br/>
+                        Ilmoituksia ei tule tasaiseen tahtiin, vaan määrä voi vaihdella. Kaikki ilmoitukset pyritään kuitenkin käsittelemään vuorokauden kuluessa. Ruuhkahuipuissa jono ja sen myötä käsittelyaika saattavat venyä.
+                        <br/>
+                        <br/>
+                        Suomi24 on meidän kaikkien yhteinen keskustelualusta, ja on koko yhteisön asia pitää huolta sen siisteydestä. Ilmoitathan siis, jos törmäät asiattomaan tai muutoin sääntöjen vastaiseen kirjoitteluun. Yhdenkin ilmoituksen avulla voimme päästä häirikön tai massapostittajan jäljille ja parhaassa tapauksessa poistaa satoja sääntöjen vastaisia viestejä. Tiesithän, että käsittelystä ei mene tietoa viestin kirjoittajalle, eikä kirjottaja koskaan saa tietää, kuka ilmoituksen on tehnyt. Voit siis olla turvallisin mielin.
+                        <br/>
+                        <br/>
+                        Tässä blogissa oli tarkoitus avata sitä, kuinka moderointi Suomi24 Keskusteluissa yleisellä tasolla toimii. Jatkossa blogissa käsitellään tarkemmin mm. moderointilinjaa ja keinoälyn tekemiä virheellisiä poistoja. Pysy siis kuulolla ja kerro meille, mikä sinua mietityttää moderointiin liittyen?
+                        <br/>
+                        <br/>
+                        P.S. Muista ilmoittaa 💩-sisällöstä, vedämme sen vessasta alas.</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/449F93/fff">
+                        <div class="info-container">
+                            <b class="username">Suomi24-kehitystiimi</b>
+                            <div class="publish-time">9.11.2018 13:53</div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3> Mikä olisi paras tapa rekisteröityä Suomi24 Keskusteluun?</h3>
+                    <p>Blogissa on ollut hiljaista, sillä syysflunssa iski myös kehitystiimiin. Kiva, että olette kuitenkin käyneet kommentoimassa vanhempia kirjoituksia! <br><br>Suomi24:n ensimmäinen Kysy Mitä Vain -tapahtuma toissa viikolla sai paljon huomiota ja hyviä kysymyksiä – sekä uusia rekisteröityneitä käyttäjiä. Käy ihmeessä kurkkaamassa asiantuntijoiden vastauksia, jos lasten kasvatus koskettaa: <a target="_blank" href="https://keskustelu.suomi24.fi/t/15465946/kysy-mita-vain-kasvatuksesta-ja-kaytoksesta">https://keskustelu.suomi24.fi/t/15465946/kysy-mita-vain-kasvatuksesta-ja-kaytoksesta</a><br><br>Kerro myös, mitä mieltä olet ketjusta: puuttuuko jotain? Oletko tyytyväinen vastauksiin?<br><br>Suunnittelemme kovaa vauhtia Suomi24 Keskustelun uutta rekisteröitymistä, ja nyt kaipaisimmekin teidän mielipiteitänne. Mikä olisi juuri sinusta paras ja helpoin tapa rekisteröityä ja kirjautua keskusteluun?<br><br>Erilaisia vaihtoehtoja on lukuisia: rekisteröityminen puhelinnumerolla tai sähköpostiosoitteella, sosiaalisen median käyttäminen kirjautumisessa tai tietysti myös vanhanmallinen käyttäjänimen, salasanan ja henkilökohtaisten tietojen antaminen rekisteröitymisen yhteydessä.<br><br>Jos rekisteröityminen toteutettaisiin puhelinnumerolla tai sähköpostilla, saisit vahvistuslinkin, jonka kautta pääsisit palveluun. Muuta sosiaalista mediaa käyttäessäsi voisit kirjautua Suomi24:ään esimerkiksi Google- tai Facebook-tunnuksilla.<br><br>Mikä tapa tuntuisi parhaalta, mitä taas et missään nimessä haluaisi käyttää? Kerro meille! Teemme uudesta rekisteröitymisestä myös erillisen kyselyn ja testaamme osalla käyttäjistä uudenlaisia tapoja. Tavoite on, että rekisteröitymisessä ei ole kynnyksiä, vaan pääset palveluun helposti ja nopeasti.<br><br>Mukavaa viikonloppua teille kaikille, keskustelkaa ahkerasti!</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/4296AD/fff">
+                        <div class="info-container">
+                            <b class="username">antihurri</b>
+                            <div class="publish-time">16.1.2019 12:48</div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3>Ruotsin kieli ei ole osa Suomea</h3>
+                    <p>eikä haittaa vaikka se katoaisi kokonaan mantereelta, niin todennäkäisesti myös tapahtuu ajan kanssa.</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/449F93/fff">
+                        <div class="info-container">
+                            <b class="username">Bisse39</b>
+                            <div class="publish-time">22.1.2019 10:56</div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3>Ihannemies?</h3>
+                    <p>Taitaa olla tällai miesten kesken hiukan hatarammalla pohjalla nuo ulkoiset ihanteet. On vaikea luoda mielikuvaa mitä voisi siltä toiselta ulkoisesti odottaa, mutta yritetääs nyt itsekkin tällai miehen näkökulmasta luoda mielikuvalle raamit.
+                            Eli itseä viehättää hieman vanhemmat karismaattiset miehet. Ikäluokassa 50-70v joilla on selkeä iän ja elämänkokemuksen tuoma auktoriteetti. Arvoiltaan perisuomalainen mies. Ei missään nimessä kaupunkien ja trendien kasvattama, vaan raavas suomalainen ukko. Sellainen maajussin tai metsurin tyylinen iso mies. Ei siis hoikkaa tai treenattua ruipeloa, vaan riski pitkä miehekäs on se mielikuva unelman miehestä. Siihen kun vielä lisää keskivertoa viriilimmän/estottomamman sekauaalisuuden joka ei ujostele luontaisia tarpeitaan!</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/75A0CC/fff">
+                        <div class="info-container">
+                            <b class="username">Help</b>
+                            <div class="publish-time">17.1.2019 13:34/div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3> Simulaatio</h3>
+                    <p>Olen saanut selville että elämme simulaatiossa. Olen nähnyt elämässäni selviä bugeja jotka vaikuttavat jollain supertietokoneella tehdyksi. Minulta kuoli yllättäen ystävä joka oli saanut selville saman asian. Auttakaa koska haluan tietää onko muilla ollut samanlaisia kokemuksia.</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/E59649/fff">
+                        <div class="info-container">
+                            <b class="username">Pahuudenmerkki</b>
+                            <div class="publish-time">9.11.2018 13:53</div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3>Hitler oli horoskooppi</h3>
+                    <p>Merkiltään härkä🐃</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/CF364A/fff">
+                        <div class="info-container">
+                            <b class="username">Suomi24-kehitystiimi</b>
+                            <div class="publish-time">9.11.2018 13:53</div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3>Ruotsinkielisten hyväksyttävä, että alle 5%:n vähemmistön on asennoiduttava realistisesti</h3>
+                    <p>Tässä kuvaava esimerkki "elävää kaksikielisyyttä":<br><br>- Men svenskspråkiga har rätt i Helsingfors till svenskspråkig sjukvård och myndighetstjänster.<br><br>- Teillä on oikeus järjestää palvelut toisillenne. Älkää odottako muitten kieliryhmien opettelevan ruotsia teidän palvelemiseksenne.<br><br>- Det omöjligt att ordna sjuk och hälsovård med endast svenskspråkig personal,det förstår alla normala människor.<br><br>- Nyt olisi hyvä kysyä, miksi ette pysty. Jos olette niin pieni vähemmistö, miksette hyväksy sitä, että teidän on myös muutettava asennettanne ja hyväksyttävä suomen kielen tarpeenne!</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/D25064/fff">
+                        <div class="info-container">
+                            <b class="username">Suomi24-kehitystiimi</b>
+                            <div class="publish-time">9.11.2018 13:53</div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3>Title</h3>
+                    <p>Ongelmat ei ole syntyneet mistään tyhjästä itsestään vaan se on tulosta suomalaisista piittaamattomasta politiikasta
+<br/><br/>
+                            Jussi Halla-ahon Viesti Suomalaisille
+                            22 480 näyttökertaa
+                        <br><br>
+                        <a target="_blank" rel="nofollow" href="https://www.youtube.com/watch?v=M7iA3ueOSdE">https://www.youtube.com/watch?v=M7iA3ueOSdE</a>
+                    </p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                <div class="card-header">
+                    <img src="http://placehold.it/30x30/CF364A/fff">
+                    <div class="info-container">
+                        <b class="username">Suomi24-kehitystiimi</b>
+                        <div class="publish-time">9.11.2018 13:53</div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Parhaat urheilijat</h3>
+                    <p>
+                        Judon osalta valinta meni aivan nappiin. Onnea Katri!
+
+                        https://www.is.fi/urheilu/art-2000005967190.html</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/CF364A/fff">
+                        <div class="info-container">
+                            <b class="username">Suomi24-kehitystiimi</b>
+                            <div class="publish-time">9.11.2018 13:53</div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3>Heading</h3>
+                    <p>Content aa asdfasdfjal</p>
+                </div>
+                <div class="controls">
+                    <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i>123</div>
+                    <div class="comment"><i class="fa fa-comment" aria-hidden="true"></i>30</div>
+                </div>
+            </div>
+            <div class="wf-box">
+                    <div class="card-header">
+                        <img src="http://placehold.it/30x30/CF364A/fff">
+                        <div class="info-container">
+                            <b class="username">Suomi24-kehitystiimi</b>
+                            <div class="publish-time">9.11.2018 13:53</div>
+                        </div>
+                    </div>
+                <div class="content">
+                    <h3>Heading</h3>
+                    <p>Content aa asdfasdfjal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../responsive_waterfall.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
